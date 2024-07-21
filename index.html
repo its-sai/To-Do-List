@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-list-check"></i> To-Do List</h1>
+        <div class="todo-container">
+            <div class="input-group">
+                <label for="task-input"><i class="fa-solid fa-pencil"></i>Task</label>
+                <input type="text" id="task-input" placeholder="Add a new Task....">
+            </div>
+
+            <div class="input-group">
+                <label for="date-input"><i class="fa-solid fa-calendar"></i>Date</label>
+                <input type="date" id="date-input">
+            </div>
+
+            <div class="input-group">
+                <label for="time-input"><i class="fa-solid fa-clock"></i>Time</label>
+                <input type="time" id="time-input">
+
+                <select id="ampm-input">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>    
+
+            <button id="add-task-button"><i class="fas fa-plus"></i>ADD TASK</button>
+
+        </div>
+
+        <ul id="task-list"></ul>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
